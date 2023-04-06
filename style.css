@@ -1,0 +1,418 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+}
+/* Desktop View*/
+.header{
+    
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: hsl(0, 0%, 100%) ;
+    padding: 1rem;
+    padding-bottom: 15rem;
+    
+
+}
+
+
+.header img{
+    max-width: 100%;
+}
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-bottom: 5rem;
+    
+}
+.nav_navegacion{
+    display: flex;
+    cursor: pointer;
+    
+}
+.nav_navegacion a{
+ margin: 0.5rem;
+}
+.nav_navegacion a:hover{
+    opacity: 0.5;
+}
+.texto-imagen{
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family:'Roboto', sans-serif; 
+    border: 0.1rem solid rgb(246, 242, 242);
+    background-color: inherit;
+    max-width: 30%;
+    padding: 1rem;
+    margin-left:3rem ;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    
+
+}
+
+.content-1{
+    display: flex;
+    padding: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    
+}
+.content-1 img{
+    margin-left: 3rem;
+    max-width: 100%;
+}
+.articulo{
+    border: 1px transparent rgb(247, 244, 244);
+    position: absolute;
+    max-width: 30%;
+    right: 0;
+    margin-top: 10rem;
+    margin-right:15rem ;
+    text-align:left;
+    
+}
+
+.articulo .titulo{
+ font-size: 2rem;
+ font-family:'Roboto', sans-serif ;
+ font-weight: bold;
+ color: hsl(0, 64%, 2%);
+ padding: 2rem;
+ padding-left: 8rem;
+ padding-top: 4rem;
+ text-transform: uppercase;
+}
+.contenido{
+    background-color: rgb(255, 255, 255);
+    color:hsl(0, 0%, 55%);
+    padding: 2rem;
+    padding-left: 8rem;
+    font-family: sans-serif;
+    
+      
+}
+
+.nosotros{
+    background-color: rgb(109, 20, 20);
+    color:hsl(0, 3%, 6%);
+    padding-left: 8rem;
+    font-family: sans-serif;
+    
+      
+}
+.nombres{
+    background-color: rgb(109, 20, 20);
+    color:hsl(0, 0%, 55%);
+    padding: 2rem;
+    padding-left: 8rem;
+    font-family: sans-serif;
+    
+      
+}
+.headingdos{
+    display: flex;
+    justify-content: space-between;
+    place-content: center;
+    gap: 47rem;
+}
+.contenido2{
+  display: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% -50%);
+    
+}
+.titulo2{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.seeallbuton{
+    border: 0.1rem solid hsl(0, 0%, 55%);
+    padding: 0.8rem;
+    background-color: white;
+    text-transform: uppercase;
+    
+}
+.contenedorimagenes{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 8rem;
+
+    
+}
+.contenedorimagenes img{
+    padding: 0.5rem;
+    max-width: 100%;
+    cursor: pointer;
+    
+}
+.contenedorimagenes img:hover{
+    opacity: 0.8;
+}
+.contenedorimagenes p{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    color: rgb(247, 246, 246);
+    text-transform: uppercase;
+    transform: translateY(-150px);
+    text-align:center;
+    margin-left: 2rem;
+    cursor: pointer;
+
+   
+  
+
+  
+}
+.footer{
+    background-color: hsl(0, 0%, 2%) ;
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+}
+.footer a,.footer p{
+    color: hsl(0, 0%, 55%);
+    padding: 1rem;
+    
+}
+.footer a{
+    padding: 0.5rem;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.footer .imagesico{
+    margin-left: 9rem;
+    cursor: pointer;
+    
+}
+.footer .imagesico img{
+    margin:0.2rem;
+}
+.attribution, .attribution a{
+    text-align: center;
+    color: rgb(16, 16, 16);
+}
+
+.contentmobile{
+    display: none;
+}
+.hamburger_icon{
+    display: none;
+}
+.mobileseall{
+    display: none;
+}
+
+
+
+@media screen and (max-width:800px) {
+    .header{
+        max-width: 100%;
+        min-height: 100%;
+        background-image: url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+    }
+    .nav_navegacion{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(20, 20, 20);
+        width: 100%;
+        min-height: 100vh;
+        font-size: 1.5rem;
+        color: rgb(245, 245, 245);
+        padding: 2rem;
+        padding-top: 5rem;
+        top: 0;
+        margin: 0;
+        position: absolute;
+        display: none;
+        inset: 0 0 0 10rem;
+        position: fixed;
+    }
+    .nav_navegacion.active{
+        display: block;
+    }
+    
+    .nav_navegacion a{
+        display: block;
+        padding-bottom: 1rem;
+
+    }
+    .nav_navegacion a:hover{
+        cursor: pointer;
+    }
+    .hamburger_icon{
+        background-color: inherit;
+        border: none;
+        outline: none;
+        display: block;
+        max-width: 100%;
+        position: absolute;
+        z-index: 999;
+        left: 1;
+        position: fixed;
+        cursor: pointer;
+        
+    }
+    
+    
+    .closeIcon{
+        display: none;
+    }
+    .closeIc.active{
+        display: block;
+    }
+    
+    .texto-imagen{
+        font-size: 2.5rem;
+        max-width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-top: 2rem;
+        place-content: center;
+
+    }
+    .content-1{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        top:0%;
+        left: 0%;
+        transform: none;
+        
+    }
+    
+    .articulo{
+        border: none;
+        position: initial;
+        max-width: 100%;
+        right: none;
+        margin-top: 1rem;
+        margin-right: 0;
+        text-align: right;
+        padding: 2rem;
+    }
+    .articulo .titulo{
+        font-size: 1.5rem;
+        padding: 1rem;
+        padding-left: 0;
+        padding-top: 0;
+        text-transform: uppercase;
+
+    }
+
+    
+    .content-1  p{
+        padding: 0;
+        padding-left: 0;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .content-1 img{
+        display: none;
+    }
+    .content-1 .contentmobile{
+        display: block;
+        max-width: 100%;
+        margin-left: 0;
+        margin: auto;
+    }
+    .contenido2{
+        margin-bottom: 8rem;
+    }
+    .headingdos{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }  
+    .titulo2{
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .seeallbuton{
+        display: none;
+    }
+        
+    .mobileseall {
+        border: 0.2rem solid hsl(0, 0%, 41%) ;
+       color: rgb(10, 10, 10);
+       font-size: 1.2rem;
+       text-align: center;
+       text-transform: uppercase;
+       width: 30%;
+       margin: auto;
+       padding: 0.5rem 0 0.5rem 0;
+       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .mobileseall{
+        margin-top: 3rem;
+    }
+   
+    .contenedorimagenes{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: none;
+        margin:0;
+    }
+    .contenedorimagenes img{
+        display: none;
+    }
+    .contenedorimagenes .contentmobile{
+        display: block;
+        max-width: 100%;
+    }
+    .contenedorimagenes p{
+        font-size: 1rem;
+        margin-left: 1rem;
+        transform: translateY(-50px);
+    }
+    .footer{
+        display: flex;
+        flex-direction:column ;
+        text-align: center;
+        padding: 3rem;
+
+    }
+    .footer a{
+        display: block;
+        padding: 1rem;
+    }
+
+    .footer img, .imagesico{
+        max-width: 100%;
+        margin:0.5rem;
+    }
+    .footer img{
+        padding-bottom: 1rem;
+
+    }
+    .footer .imagesico{
+        margin-left: 0;
+        padding: 1rem;
+    }
+    .footer p{
+        font-size: 1rem;
+        font-family: sans-serif;
+
+    }
+
+    
+}
